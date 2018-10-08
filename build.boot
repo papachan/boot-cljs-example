@@ -9,7 +9,8 @@
                  [crisptrutski/boot-cljs-test "0.3.5-SNAPSHOT" :scope "test"]
                  [org.clojure/clojurescript "1.10.339"]
                  [cider/piggieback          "0.3.9"            :scope "test"]
-                 [weasel                      "0.7.0"          :scope "test"]])
+                 [weasel                    "0.7.0"            :scope "test"]
+                 [nrepl                     "0.4.5"            :scope "test"]])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
          '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
