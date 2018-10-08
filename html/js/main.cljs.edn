@@ -1,0 +1,7 @@
+{
+ :require [app.core]
+ :init-fns [app.core/main]
+ :compiler-options {
+           :output-to "js/main.js"
+           :optimizations :whitespace
+           :asset-path "js/main.out"}}
