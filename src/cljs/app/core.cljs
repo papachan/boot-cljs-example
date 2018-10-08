@@ -1,6 +1,6 @@
 (ns app.core)
 
 (defn main []
-  (let [c (.. js/document (createElement "DIV"))]
-    (aset c "innerHTML" "<p>i'm dynamically created</p>")
-    (.. js/document (getElementById "container") (appendChild c))))
+  (let [c (.getElementById js/document "container")
+        div (.. js/document (createElement "DIV"))]
+    (set! (.-innerHTML c) (aset div "innerHTML" "<p>I'm dynamically created !!!</p>"))))
